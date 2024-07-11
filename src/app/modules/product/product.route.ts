@@ -8,7 +8,6 @@ const router = express.Router();
 
 router.post(
   '/create-product',
-
   validateRequest(productValidation.productValidationSchema),
   ProductControllers.createProduct,
 );
@@ -16,6 +15,7 @@ router.post(
 router.get('/', ProductControllers.getProduct);
 
 router.get('/:id', ProductControllers.getSingleProduct);
+
 
 router.put(
   '/:id',
