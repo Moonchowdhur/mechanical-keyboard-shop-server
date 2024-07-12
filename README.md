@@ -4,7 +4,7 @@
 
 * Live URL
 
--
+-https://redux-first-assignment.vercel.app/
 
 # How to run the project in locally
 
@@ -20,6 +20,9 @@ To run the project locally, follow these steps:
 
 * user can add, edit, delete and also update product.
 * user can access all products.
+
+- order Management:
+* user can add order history with user name, address, email, payment method and phone number
 
 # Technologies Used
 
