@@ -57,8 +57,7 @@ const updateSingleProduct = catchAsync(async (req, res) => {
   });
 });
 
-
-
+//delete product
 const deleteSingleProduct = catchAsync(async (req, res) => {
   const { id } = req.params;
   const result = await ProductServices.deleteSingleProductFromDB(id);
@@ -77,5 +76,4 @@ export const ProductControllers = {
   getSingleProduct,
   updateSingleProduct,
   deleteSingleProduct,
-
 };
