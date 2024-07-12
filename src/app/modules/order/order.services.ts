@@ -36,7 +36,7 @@ const createOrderIntoDB = async (payload: Torder) => {
       }
     }
 
-    // Create the order if all products exist and have sufficient quantity
+    // Create the order if all products exist and have sufficient quantity->
     const result = await Order.create([payload], { session });
 
     if (!result.length) {
@@ -53,7 +53,7 @@ const createOrderIntoDB = async (payload: Torder) => {
 
     // Commit the transaction
     await session.commitTransaction();
-    await  session.endSession();
+    await session.endSession();
 
     return result;
   } catch (error) {
