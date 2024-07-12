@@ -114,6 +114,8 @@ const getSingleProductFromDB = async (ProductID: string) => {
   return result;
 };
 
+//updated
+
 const updateSingleProductFromDB = async (
   ProductID: string,
   payload: Partial<TProduct>,
