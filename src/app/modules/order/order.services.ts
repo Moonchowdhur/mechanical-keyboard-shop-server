@@ -18,6 +18,7 @@ import { startSession } from 'mongoose';
 //   return result;
 // };
 
+//create order
 const createOrderIntoDB = async (payload: Torder) => {
   const session = await startSession();
   session.startTransaction();
@@ -36,7 +37,7 @@ const createOrderIntoDB = async (payload: Torder) => {
       }
     }
 
-    // Create the order if all products exist and have sufficient quantity->
+    // Create the order if all products exist and have sufficient quantity----
     const result = await Order.create([payload], { session });
 
     if (!result.length) {
